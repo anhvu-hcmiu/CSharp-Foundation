@@ -3,6 +3,9 @@ using CSharpExercises.OopCore;
 using CSharpExercises.InterfacesInheritance;
 using CSharpExercises.Generics;
 using CSharpExercises.CollectionsLinq;
+using CSharpExercises.DelegatesEvents;
+using CSharpExercises.ExceptionsNullable;
+using CSharpExercises.AsyncAwait;
 
 var exercises = new (string Label, Action Run)[]
 {
@@ -22,6 +25,13 @@ var exercises = new (string Label, Action Run)[]
     ("05 - Collections/LINQ: Deferred Execution", LinqDeferredExecution.Run),
     ("05 - Collections/LINQ: Query Syntax Comparison", LinqQuerySyntaxComparison.Run),
     ("05 - Collections/LINQ: LinqAggregatesTodo", LinqAggregatesTodo.Run),
+    ("06 - Delegates/Events: Func/Action/Predicate", FuncActionPredicate.Run),
+    ("06 - Delegates/Events: Custom Delegates and Events", CustomDelegatesAndEvents.Run),
+    ("07 - Exceptions/Nullable: Try/Catch/Finally", TryCatchFinally.Run),
+    ("07 - Exceptions/Nullable: Nullable Reference Types", NullableReferenceTypes.Run),
+    ("07 - Exceptions/Nullable: Nullable Reference Types Solution", NullableReferenceTypesSolution.Run),
+    ("08 - Async/Await: Task Basics", TaskBasics.Run),
+    ("08 - Async/Await: Async Patterns Todo", AsyncPatternsTodo.Run),
 };
 
 while (true)

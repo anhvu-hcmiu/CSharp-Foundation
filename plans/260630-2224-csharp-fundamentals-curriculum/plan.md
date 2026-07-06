@@ -21,7 +21,7 @@ Out of scope: ASP.NET Core, EF Core, web/HTTP concepts - resume those in a separ
 | 1 | [Project Setup](./phase-01-project-setup.md) | Completed |
 | 2 | [OOP Core and Interfaces](./phase-02-oop-core-and-interfaces.md) | Completed |
 | 3 | [Generics and LINQ](./phase-03-generics-and-linq.md) | Completed |
-| 4 | [Delegates Exceptions Nullable and Async](./phase-04-delegates-exceptions-nullable-and-async.md) | Pending |
+| 4 | [Delegates Exceptions Nullable and Async](./phase-04-delegates-exceptions-nullable-and-async.md) | Completed |
 | 5 | [Records and Pattern Matching](./phase-05-records-and-pattern-matching.md) | Pending |
 
 ## Dependencies

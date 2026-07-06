@@ -1,7 +1,7 @@
 ---
 phase: 4
 title: "Delegates Exceptions Nullable and Async"
-status: pending
+status: completed
 priority: P2
 effort: "4h"
 dependencies: [3]
@@ -38,10 +38,10 @@ Folders `06-delegates-events/`, `07-exceptions-nullable/`, `08-async-await/`. Sa
 7. Register all 6 in `Program.cs`, build, run each, confirm `Task.WhenAll` TODO solution is measurably faster than sequential.
 
 ## Success Criteria
-- [ ] All exercises build/run; TODO portions match Solution file behavior when filled in
-- [ ] `Stopwatch`-measured `Task.WhenAll` exercise shows parallel run is faster than sequential equivalent
-- [ ] User can state the `async void` pitfall in one sentence
-- [ ] Nullable reference type warnings are visible in build output for intentionally-nullable-misused code (then fixed)
+- [x] All exercises build/run; TODO portions match Solution file behavior when filled in
+- [x] `Stopwatch`-measured `Task.WhenAll` exercise shows parallel run is faster than sequential equivalent - verified 477ms sequential vs 152ms parallel
+- [ ] User can state the `async void` pitfall in one sentence - pending: user-side comprehension check, not implementation work
+- [x] Nullable reference type warnings are visible in build output for intentionally-nullable-misused code (then fixed) - verified CS8602 via temporary misuse edit, reverted cleanly
 
 ## Risk Assessment
 - `async void` demo risk: an actual unhandled-exception crash demo could be confusing/destructive to the menu loop - keep this exercise explanatory via comments + a safe `try/catch`-wrapped illustration, not a literal uncaught crash.
