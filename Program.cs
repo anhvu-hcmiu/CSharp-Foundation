@@ -6,6 +6,7 @@ using CSharpExercises.CollectionsLinq;
 using CSharpExercises.DelegatesEvents;
 using CSharpExercises.ExceptionsNullable;
 using CSharpExercises.AsyncAwait;
+using CSharpExercises.RecordsPatternMatching;
 
 var exercises = new (string Label, Action Run)[]
 {
@@ -32,6 +33,9 @@ var exercises = new (string Label, Action Run)[]
     ("07 - Exceptions/Nullable: Nullable Reference Types Solution", NullableReferenceTypesSolution.Run),
     ("08 - Async/Await: Task Basics", TaskBasics.Run),
     ("08 - Async/Await: Async Patterns Todo", AsyncPatternsTodo.Run),
+    ("09 - Records/Pattern Matching: Records Basics", RecordsBasics.Run),
+    ("09 - Records/Pattern Matching: Records With Mutation", RecordsWithMutation.Run),
+    ("09 - Records/Pattern Matching: Switch Expressions Todo", SwitchExpressionsTodo.Run),
 };
 
 while (true)

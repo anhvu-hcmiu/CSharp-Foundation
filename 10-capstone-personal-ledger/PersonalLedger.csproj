@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -8,8 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="10-capstone-personal-ledger/**/*.cs" />
-    <None Remove="10-capstone-personal-ledger/**/*.cs" />
+    <None Include="Data\*.json" CopyToOutputDirectory="PreserveNewest" />
   </ItemGroup>
 
 </Project>

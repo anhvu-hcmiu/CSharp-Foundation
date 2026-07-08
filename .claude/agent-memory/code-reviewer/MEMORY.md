@@ -1,0 +1,2 @@
+- [Curriculum conventions](project_curriculum_conventions.md) — Todo files are fully worked (not blanks); Solution files exist only for diffing and stay off the Program.cs menu
+- [Report output format](feedback_report_output_format.md) — return findings as final message text, don't write a report .md file for this repo's code-reviewer subagent calls

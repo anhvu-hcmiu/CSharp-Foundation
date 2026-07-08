@@ -24,7 +24,15 @@ public static class StaticTyping
         var unboxed = (int)boxed; // unboxing: object -> int, must match the original type exactly
         Console.WriteLine($"boxed value: {boxed}, unboxed back: {unboxed}");
 
-        object wrongUnbox = (double)boxed; // would throw InvalidCastException at runtime -
-        // unboxing requires an exact type match, unlike a normal C# numeric cast.
+        try
+        {
+            var wrongUnbox = (double)boxed; // throws InvalidCastException at runtime -
+            // unboxing requires an exact type match, unlike a normal C# numeric cast.
+            Console.WriteLine($"unreachable: {wrongUnbox}");
+        }
+        catch (InvalidCastException ex)
+        {
+            Console.WriteLine($"Caught expected exception: {ex.Message}");
+        }
     }
 }
